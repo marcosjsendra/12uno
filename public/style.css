@@ -1,50 +1,79 @@
-/* Normalize CSS (already linked in HTML) */
+/* Custom CSS - 12uno DevWorks - 2025 */
 
-/* Custom Styles */
+/* Animations */
+
+@keyframes backgroundColorAnimation {
+  0% {
+    background-color: #ABDDC4;
+    /* Start color */
+  }
+
+  50% {
+    background-color: #ABAFDD;
+    /* Middle color */
+  }
+
+  100% {
+    background-color: #ABDDC4;
+    /* End color (back to start) */
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
+  animation: backgroundColorAnimation 20s ease-in-out infinite;
+  background-color: #ABB4DD;
+}
+
+.site-container {
+  padding: 20px 0 20px 0; 
+  height: 95vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
+.logo-section {
+  width: 300px;
+  height: 150px;
+  
+  background-image: url('src/12uno-logo-div.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-h2 {
-  color: #333;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0 0 10px;
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
 .contact-link {
-  color: #007BFF;
+  color: #000000;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .contact-link:hover {
@@ -52,9 +81,13 @@ p {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+}
+
+footer > p {
+  margin: 0;
+  font-size: 0.6rem;
 }
