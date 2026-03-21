@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../12uno-logo-white.svg'
 
 function Footer() {
   return (
@@ -30,7 +31,7 @@ function Footer() {
               <p className="footer-credit">© 2026 12uno. All rights reserved. | Digital systems. Built simply. | By Marcos Sendra</p>
             </div>
             <div className="footer-logo">
-              <img src="/src/12uno-logo-white.svg" alt="12uno" width="65" height="31" />
+              <img src={logo} alt="12uno" width="65" height="31" />
             </div>
           </div>
         </div>
