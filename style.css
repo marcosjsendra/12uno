@@ -90,6 +90,7 @@ body::before {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-secondary);
+  margin-right: auto;
 }
 
 .changing-word {
@@ -150,7 +151,7 @@ body::before {
   height: 100%;
   object-fit: cover;
   opacity: 0.15;
-  animation: slowDrift 30s linear infinite;
+  animation: slowDrift 15s linear infinite;
 }
 
 .hero-bg-inner::after {
@@ -484,7 +485,7 @@ body::before {
   }
 
   .credit {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     order: 3;
   }
@@ -531,5 +532,14 @@ body::before {
 
   .footer-item {
     padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .credit {
+    display: none;
+  }
+  .animated-text {
+    margin-right: 0;
   }
 }
